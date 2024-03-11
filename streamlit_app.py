@@ -52,7 +52,9 @@ if st.session_state.messages[-1]["role"] != "assistant":
             response = generate_response(prompt, hf_email, hf_pass) 
             st.write(response) 
     message = {"role": "assistant", "content": response}
-    st.session_state.messages.append(message)import streamlit as st
+    st.session_state.messages.append(message)
+
+import streamlit as st
 
 st.title('🎈 App Name')
 
