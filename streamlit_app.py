@@ -53,9 +53,3 @@ if st.session_state.messages[-1]["role"] != "assistant":
             st.write(response) 
     message = {"role": "assistant", "content": response}
     st.session_state.messages.append(message)
-
-import streamlit as st
-
-st.title('🎈 App Name')
-
-st.write('Hello world!')
